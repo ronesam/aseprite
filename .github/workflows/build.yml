@@ -48,7 +48,7 @@ jobs:
         curl -L https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-macOS-Release-arm64.zip --output skia.zip
         7z x skia.zip
         pwd
-        ls skia -l
+        ls
         cmake -S . -B build -G Ninja \
           -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} \
           -DCMAKE_OSX_ARCHITECTURES=arm64 \

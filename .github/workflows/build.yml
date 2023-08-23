@@ -46,6 +46,7 @@ jobs:
           export enable_ccache=on
         fi
         curl -L https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-macOS-Release-arm64.zip --output skia.zip
+        7z x --help
         7z x skia.zip -o skia
         pwd
         ls

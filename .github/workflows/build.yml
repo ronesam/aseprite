@@ -54,7 +54,7 @@ jobs:
           -DCMAKE_OSX_ARCHITECTURES=arm64 \
           -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 \
           -DENABLE_UI=${{ matrix.enable_ui }} \
-          -DENABLE_CCACHE=$enable_ccache
+          -DENABLE_CCACHE=$enable_ccache \
           -DLAF_BACKEND=skia \
           -DSKIA_DIR=/Users/runner/work/aseprite/aseprite/skia \
           -DSKIA_LIBRARY_DIR=/Users/runner/work/aseprite/aseprite/skia/out/Release-arm64 \
